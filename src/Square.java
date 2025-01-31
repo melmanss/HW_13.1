@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class Square implements Shape {
+    private final double side;
 
-public class Square {
+    public Square(double side) {
+        this.side = side;
+    }
+
+    @Override
+    public double area() {
+        return side * side; /*Площа квадрата*/
+    }
 }

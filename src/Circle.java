@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class Circle implements Shape {
+    private final double radius;
 
-public class Circle {
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double area() {
+        return Math.PI * radius * radius; /*Площа кола*/
+    }
 }
